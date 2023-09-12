@@ -75,18 +75,18 @@
         <a class="navbar-brand" href="{% url 'index' %}" style="color:#0bb32c;">
           <img src="{% static 'Images/EducateLanka-logo.png' %}" alt="Logo 1" style="width: 100px; height: 100px;">
           <img src="{% static 'Images/x-mark.png' %}" alt="x-mark" style="width: 20px; height: 20px;">
-           <img src="{% static 'Images/kghs-logo.png' %}" alt="Logo 2" style="width: 60px; height: 60px;">
+          <img src="{% static 'Images/bhsk-logo.png' %}" alt="Logo 2" style="width: 100px; height: 100px;">
         </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="basicExampleNav">
               <ul class="navbar-nav mr-auto smooth-scroll">
-                  {% if user.is_superuser %}
-                  <li class="nav-item">
-                      <a class="nav-link" href="{% url 'admin:index' %}" target="_blank" id="navigation-item">Admin</a>
-                  </li>
-                  {% endif %}
+                {% if user.is_superuser %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'admin:index' %}" target="_blank" id="navigation-item">Admin</a>
+                </li>
+                {% endif %}
                   {% if user.is_authenticated %}
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'user_logout' %}" id="navigation-item-logout">Logout</a>
@@ -104,10 +104,10 @@
                   </li>
                   {% endif %}
                   <li class="nav-item">
-                      <a class="nav-link" href="https://ghskandy.edu.lk/" target="_blank" id="navigation-item">My School</a>
+                      <a class="nav-link" href="#" target="_blank" id="navigation-item">My School</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="https://ghskandy.edu.lk/latest-news/" target="_blank" id="navigation-item">Latest News</a>
+                      <a class="nav-link" href="#" target="_blank" id="navigation-item">Latest News</a>
                   </li>                  
               </ul>
               {% if request.user.is_authenticated %}

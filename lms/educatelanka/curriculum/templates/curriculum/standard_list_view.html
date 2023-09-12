@@ -21,17 +21,7 @@
         <hr style="color:#0bb32c;">
 
         <!-- description -->
-        <h4 class="white-text my-4" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-          hic
-          provident nulla repellat
-          facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-          est
-          sit pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-          hic
-          provident nulla repellat
-          facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-          est
-          sit pariatur.</h4>
+        <h6 class="white-text my-4" style="color: #000000;">Explore 'Grades' within EducateLanka's Learning Management System (LMS), where we categorize and organize classes by grade levels. Easily navigate and access resources and materials specific to each grade, streamlining the educational experience for students and educators alike. 'Grades' simplifies class management and ensures a seamless learning journey for every grade level.</h6>
   </div>
 </header>
 {% endblock %}
@@ -45,12 +35,7 @@
               <div class="row d-flex justify-content-center mb-4">
                 <!-- class column -->
                 <div class="col-md-8">
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-                                    hic
-                                    provident nulla repellat
-                                    facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-                                    est
-                                    sit pariatur.</p>
+                  <p class="grey-text">Select "Let's get started" to access your subjects.</p>
                 </div>
               </div>
               <!-- class row2 for cards -->
@@ -62,7 +47,7 @@
                             <h4 class="card-title" style="color:#0bb32c;">{{standard.name}}</h4>
                             <p class="card-text">{{standard.description|truncatechars:75}}</p>
                             {% if user.is_authenticated %}
-                            <a href="{% url 'curriculum:subject_list' slug=standard.slug %}" class="btn btn-primary" style="background-color: #002147;">Lets get started</a>
+                            <a href="{% url 'curriculum:subject_list' slug=standard.slug %}" class="btn btn-primary" style="background-color: #002147;">Let's get started</a>
                             {%else%}
                             <p>Register or login to start learning</p>
                             <a href="{% url 'user_login' %}" class="btn btn-std" style="background-color: #002147; color: #ffffff;">Login</a>

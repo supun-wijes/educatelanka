@@ -12,7 +12,7 @@ body,
 }
 
 #intro {
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://mgt.sjp.ac.lk/bec/wp-content/uploads/2017/02/DSC_2046.jpg") no-repeat center center fixed;
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://bacp-web-live-endpoint.azureedge.net/cache/6/a/6/8/f/2/6a68f224542bacb98de26084b89753ae00a3358d.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -38,7 +38,7 @@ body,
 }
 
 .about-section{
-    background: url('https://pbs.twimg.com/media/Eir7kvoXkAEbFOp.jpg') no-repeat left;
+    background: url('https://www.chsg.org.uk/_site/data/images/news/1337/Carshalton%20Highschool%20for%20Girls%20%202022%20%2000250.jpg') no-repeat left;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
