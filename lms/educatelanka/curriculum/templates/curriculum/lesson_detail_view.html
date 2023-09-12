@@ -10,7 +10,7 @@
   <div id="page-intro" class="container-fluid d-flex align-items-center justify-content-center ">
     <div class="row d-flex justify-content-center text-center">
       <div class="col-md-10 text-white">
-        <!-- heading -->
+        
         <h2 class="display-4 font-weight-bold  p-5 " style="color:#0bb32c; margin-top: 120px;" >Chapter-{{lessons.position}}: {{lessons.name}}</h2>
         <div class="row d-flex justify-content-center text-center">
           <ul class="breadcrumb">
@@ -22,11 +22,11 @@
           </ul>
         </div>
 
-        <!-- divider -->
+        
         <hr style="color:#0bb32c;">
 
-        <!-- description -->
-        <h4 class="white-text my-4" style="color: #000000;">Exploring the Lesson Details: Dive into the Heart of the Learning Experience. <br> Powered by: EducateLanka&reg;</h4>
+        
+        <h5 class="white-text my-4" style="color: #000000;">Exploring the Lesson Details: Dive into the Heart of the Learning Experience. <br> Powered by: EducateLanka&reg;</h5>
   </div>
 </header>
 {% endblock %}
@@ -34,13 +34,13 @@
 {% block content %}
 
 <section class="text-center">
-    <h2 class="mb-0 mt-5 font-weight-bold" style="color:#0bb32c;">Lecture Details</h2>
+    <h2 class="mb-0 mt-5 font-weight-bold" style="color:#0bb32c;">Lesson Details</h2>
     <div class="row d-flex justify-content-center mb-3">
       <blockquote class="blockquote mt-0">
         <footer class="blockquote-footer">Created on {{lessons.created_at}} by <cite title="Source Title">{{lessons.created_by}}</cite></footer>
         </blockquote>
     </div>
-    <!-- video -->
+    
     <div class="row d-flex justify-content-center mb-3" >
       <div id="player-overlay">
             <video controls style="width: 100%; max-width: 800px; height: auto; border-radius: 10px;">
@@ -48,7 +48,7 @@
               </video>
       </div>
     </div>
-    <!-- download cards -->
+    
     <div class="row d-flex justify-content-center mb-3 mt-3">
       <!-- download presentations -->
                 <div class="col-md-4 mb-4 mt-4">
@@ -56,7 +56,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Download Presentations</h5>
                       {% if lessons.ppt %}
-                      <p class="card-text">Download presentations from the lecture</p>
+                      <p class="card-text">Download presentations from the lesson</p>
                       <a href="{{lessons.ppt.url}}" download>
                       <button type="button" class="button-les"><span>Get Files</span></button>
                       </a>
@@ -73,7 +73,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Download Notes</h5>
                       {% if lessons.Notes %}
-                      <p class="card-text">Download notes from the lecture</p>
+                      <p class="card-text">Download notes from the lesson</p>
                       <a href="{{lessons.Notes.url}}" download>
                       <button type="button" class="button-les"><span>Get Files</span></button>
                       </a>
@@ -89,7 +89,7 @@
                   <div class="card box-shadow-hover">
                     <div class="card-body">
                       <h5 class="card-title">Download Video</h5>
-                      <p class="card-text">Download Video from the lecture</p>
+                      <p class="card-text">Download Video from the lesson</p>
                       <a href="{{lessons.video.url}}" download>
                       <button type="button" class="button-les"><span>Get Files</span></button>
                       </a>
@@ -110,7 +110,7 @@
       </div>
 </section>
 
-<hr class="my-5" style="color:#ff5722;">
+<hr class="my-5" style="color:#0bb32c;">
 
 <!-- Comments section -->
 <section >
